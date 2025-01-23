@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    nav ul li{
+        @apply
+        p-2
+        flex
+        items-center
+        gap-2
+        hover:bg-slate-500
+        hover:border-b
+        hover:border-purple-500
+        duration-300
+        ;
+    }
+}
+@layer components{
+    .bg-cover{
+        @apply
+        flex 
+        items-center
+        justify-between
+        ;
+    }
+}
+@layer components{
+    button{
+        @apply
+        bg-none
+        shadow-lg shadow-purple-950/50
+        border-2 border-purple-950
+        px-3
+        py-2
+        rounded-md
+        hover:bg-purple-950
+        duration-300
+        ;
+    }
+}
+@layer components{
+    input[type="text"]{
+        @apply
+        text-black !important
+    }
+}
+@layer components{
+    *{
+        scroll-behavior: smooth;    
+    }
+}

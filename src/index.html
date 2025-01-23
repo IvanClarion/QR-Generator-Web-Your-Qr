@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="font.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+<body class="bg-slate-900 text-white inter">
+    <nav class="flex justify-between items-center w-full p-3 ">
+        <a href="#home">
+        <label class="font-bold text-xl">YOUR QR</label></a>
+        <ul class="flex gap-9">
+            <li>
+                <img src="icons/home.svg" alt="">
+                <a href="#generate">Generate</a>
+            </li>
+            <li>
+                <img src="icons/socials.svg" alt="">
+                <a href="https://github.com/IvanClarion" target="_blank">Socials</a>
+            </li>
+        </ul>
+    </nav>
+<section class="bg-cover" id="home" >
+    <div class="block justify-start text-wrap m-5">
+        <h1 class="text-8xl ga">Welcome to<br> Your QR!</h1>
+        <p class="m-5 text-xl">Created By Ivan</p>
+        <span class="flex items-center gap-5 mx-5 my-3">
+        <a href="https://ivandaleclarion.netlify.app/" target="_blank">
+            <button>About Me</button> </a>
+        <a href=" " target="_blank">
+            <button>Source Code</button> </a>
+        </span>
+    </div>
+</section>
+<section id="generate" class="flex justify-center items-center ">
+    <div class="gap-3">
+        <input type="text" id="qr-code-value" placeholder="Enter A URL" name="QRInput" required class="p-3 rounded-lg">
+        <button onclick="generateQRCode()"> Generate QR code</button>
+        
+    </div>
+</section>
+<section class="text-center justify-center flex">
+<div id="barcode-section" class="border border-purple-950 p-3 w-1 gap-5 ">
+    <img id="qr-code-image" class="m-2">
+    <span class="flex items-center justify-center m-5">
+    <button class="flex gap-4" id="download-qr"> 
+    <img src="icons/downlaod.svg" alt="">
+    Download
+    </button>
+    </span>
+</div>
+</section>
+<script src="barcode.js"></script>
+<script src="downloadimg.js"></script>
+</body>
+</html>

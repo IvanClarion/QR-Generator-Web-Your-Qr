@@ -1,0 +1,11 @@
+.inter {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  input[type="text"] {
+    color: black; !important
+    background-color: none; !important
+    outline: none; !important
+  }
